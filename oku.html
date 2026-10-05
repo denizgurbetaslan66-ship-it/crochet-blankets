@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dergi Okuyucu — Crochet Blankets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { background: #111; color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 5%; background: #1a1a1a; border-bottom: 1px solid #333; }
+        .viewer-container { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem; width: 100%; box-sizing: border-box; }
+        .toolbar { display: flex; gap: 1rem; margin-bottom: 1rem; background: #222; padding: 0.5rem 1rem; border-radius: 30px; align-items: center; }
+        .toolbar span { color: #fff; font-size: 0.9rem; }
+        .pdf-box { width: 100%; max-width: 900px; height: 80vh; border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: none; background: #fff; }
+        footer { background: #1a1a1a; padding: 1rem 5%; display: flex; justify-content: space-between; font-size: 0.85rem; color: #888; border-top: 1px solid #333; }
+        footer a { color: #fff; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span style="font-family:'Playfair Display',serif; font-size:1.1rem;">Create Your Own Crochet Blankets — 4th Edition</span>
+        <a href="index.html" style="color:#fff; text-decoration:none; font-size:0.9rem;">✕ Kapat</a>
+    </header>
+
+    <div class="viewer-container">
+        <div class="toolbar">
+            <span>Dergi Görüntüleyici (116 Sayfa)</span>
+        </div>
+        <iframe src="dergi.pdf" class="pdf-box"></iframe>
+    </div>
+
+    <footer>
+        <span>PDF araç çubuğu ile sayfaları yakınlaştırabilir veya tam ekran yapabilirsiniz.</span>
+        <a href="index.html">Ana Sayfaya Dön</a>
+    </footer>
+
+</body>
+</html>
