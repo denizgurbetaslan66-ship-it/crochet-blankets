@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Blankets — El Örgüsü Battaniye Rehberi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #F5F2EB;
+            --text-color: #1A1A1A;
+            --accent-color: #C84B31;
+            --yellow-accent: #E5C100;
+            --dark-bg: #111111;
+            --card-bg: #EFECE6;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        nav { display: flex; gap: 2rem; align-items: center; }
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent-color); }
+        .btn-yellow {
+            background-color: var(--yellow-accent);
+            color: #000;
+            padding: 0.7rem 1.4rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .btn-yellow:hover { opacity: 0.9; }
+        
+        .hero {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            padding: 5% 5%;
+            align-items: center;
+        }
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        .hero-content h1 span { color: var(--accent-color); font-style: italic; }
+        .hero-content p { font-size: 1.1rem; color: #555; margin-bottom: 2rem; max-width: 500px; }
+        .hero-buttons { display: flex; gap: 1rem; }
+        .btn-dark {
+            background-color: var(--dark-bg);
+            color: #fff;
+            padding: 0.8rem 1.6rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .mag-cover {
+            background: var(--card-bg);
+            padding: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-radius: 6px;
+            text-align: center;
+        }
+        .mag-cover img { width: 100%; border-radius: 4px; }
+
+        .manifesto {
+            padding: 6rem 5%;
+            background-color: #EFECE6;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .manifesto h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            max-width: 800px;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+        }
+        .manifesto h2 span { font-style: italic; color: var(--accent-color); }
+
+        .sections-grid {
+            padding: 6rem 5%;
+        }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 3rem; }
+        .category-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr auto;
+            align-items: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .category-row h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; }
+        .category-row p { color: #666; font-size: 1rem; }
+        .arrow-btn {
+            width: 45px; height: 45px; border-radius: 50%;
+            border: 1px solid #111; display: flex; align-items: center;
+            justify-content: center; text-decoration: none; color: #111;
+            transition: all 0.2s;
+        }
+        .arrow-btn:hover { background: #111; color: #fff; }
+
+        footer {
+            background-color: var(--dark-bg);
+            color: #fff;
+            padding: 4rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer .logo { color: #fff; }
+        .footer-links { display: flex; gap: 2rem; }
+        .footer-links a { color: #aaa; text-decoration: none; font-size: 0.9rem; }
+        .footer-links a:hover { color: #fff; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CROCHET BLANKETS</div>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="oku.html?sayi=4&page=1">Dergiyi Oku</a>
+            <a href="yazar-ol.html" class="btn-yellow">Yazar Ol</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>İlmek ilmek sevgi, <span>sıcak bir yuva.</span></h1>
+            <p>El örgüsü battaniyeler, zarif motifler ve evinizi ısıtacak 25 özgün tasarım tek bir dijital sayıda buluşuyor[cite: 11].</p>
+            <div class="hero-buttons">
+                <a href="oku.html?sayi=4&page=1" class="btn-dark">Son Sayıyı Oku ↗</a>
+                <a href="yazar-ol.html" class="btn-yellow">Yazar Ol</a>
+            </div>
+        </div>
+        <div class="mag-cover">
+            <h3 style="margin-bottom: 15px; font-family:'Playfair Display',serif;">DÖRDÜNCÜ SAYI (2026)</h3>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Create Your Own Crochet Blankets - 4th Edition</p>
+            <a href="oku.html?sayi=4&page=1"><img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=600&q=80" alt="Crochet Blankets Magazine"></a>
+        </div>
+    </section>
+
+    <section class="manifesto">
+        <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 1rem; font-weight:600;">YAYIN SÖZÜMÜZ / 01</p>
+        <h2>Her ip bir hikaye anlatır, her battaniye evinizin en güzel köşesinde <span>yankılanır.</span></h2>
+    </section>
+
+    <section class="sections-grid">
+        <h2 class="section-title">Kategoriler & İçerikler</h2>
+        <div class="category-row">
+            <span style="font-family:'Playfair Display',serif; font-size:1.5rem; color:#888;">01</span>
+            <div>
+                <h3>Başlangıç & Araçlar</h3>
+                <p>Tığ seçimleri, ilmek ipuçları ve temel el aletleri rehberi.</p>
+            </div>
+            <a href="oku.html?sayi=4&page=8" class="arrow-btn">↗</a>
+        </div>
+        <div class="category-row">
+            <span style="font-family:'Playfair Display',serif; font-size:1.5rem; color:#888;">02</span>
+            <div>
+                <h3>Parlak & Güzel Battaniyeler</h3>
+                <p>Paskalya battaniyesi, renkli çiçek motifleri ve konforlu tasarımlar[cite: 16].</p>
+            </div>
+            <a href="oku.html?sayi=4&page=14" class="arrow-btn">↗</a>
+        </div>
+        <div class="category-row">
+            <span style="font-family:'Playfair Display',serif; font-size:1.5rem; color:#888;">03</span>
+            <div>
+                <h3>Granny Square Motifleri</h3>
+                <p>Klasik kare motiflere modern dokunuşlar ve Portekiz çini ilhamları[cite: 49].</p>
+            </div>
+            <a href="oku.html?sayi=4&page=40" class="arrow-btn">↗</a>
+        </div>
+        <div class="category-row">
+            <span style="font-family:'Playfair Display',serif; font-size:1.5rem; color:#888;">04</span>
+            <div>
+                <h3>Bebek Battaniyeleri & Oyuncaklar</h3>
+                <p>Sevimli su aygırı uyku arkadaşı (hippo comforter), kuzu patikleri ve bebek tulumları[cite: 86].</p>
+            </div>
+            <a href="oku.html?sayi=4&page=76" class="arrow-btn">↗</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">CROCHET BLANKETS</div>
+        <div class="footer-links">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="oku.html?sayi=4&page=1">Son Sayı</a>
+            <a href="yazar-ol.html">Yazar Ol</a>
+        </div>
+    </footer>
+
+</body>
+</html>
